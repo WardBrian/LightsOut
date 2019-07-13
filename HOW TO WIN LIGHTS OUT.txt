@@ -1,0 +1,27 @@
+Compiled from https://www.jaapsch.net/puzzles/lights.htm and https://en.wikipedia.org/wiki/Lights_Out_(game)
+This is used mainly to prove that each is solveable, as this algorithm always works on solveable boards
+
+
+Light-chase (toggle lights under highest lit row) until only bottom is lit.
+======= 5x5 =========
+Then, follow this pattern and chase again until solved
+
+Bottom  Top 
+O---O	OO---
+-O-O-	O--O-
+OOO--	-O---
+--OOO	---O-
+O-OO-	----O
+-OO-O	O----
+OO-OO	--O--
+
+
+======= 6x6 =========
+If the light at A6 is on, press A1 and C1. 
+If the light at B6 is on, press D1. 
+If the light at C6 is on, press A1 and E1. 
+If the light at D6 is on, press B1 and F1. 
+If the light at E6 is on, press C1. 
+If the light at F6 is on, press D1 and F1.
+
+Chase again until solved
