@@ -119,12 +119,11 @@ class LightsOutCUI:
 def main():
     """Program entrypoint, create CUI, wrapper object and start it
     """
-    root = py_cui.PyCUI(6,8)
+    root = py_cui.PyCUI(5,7) # 6,8 for larger game
     root.set_title('Lights Out!')
     root.toggle_unicode_borders()
     lightsout = LightsOutCUI(root)
     print(lightsout.get_logo())
-    root.enable_logging()
     root.start()
 
 
